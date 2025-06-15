@@ -7,9 +7,9 @@
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/logo.png" alt="">
-            <span>IdeKreatif</span>
+            <span></span>
           </a>
-          <p>Aplikasi blog berbasis PHP native yang dirancang untuk memudahkan pengguna dalam membuat dan mengelola konten blog.</p>
+          <p></p>
           <div class="social-links mt-3">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -18,20 +18,18 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-12 footer-contact text-md-end">
-          <h4>Contact Us</h4>
-          <p>Jalan Nusantara KM. 14 <br>Tanjungpinang, Riau Islands<br>Indonesia</p>
+          <h4></h4>
+          <p></p>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="copyright">
-      ©
       <script>
         document.write(new Date().getFullYear());
         </script>
-        <a href="#" target="_blank" class="footer-link fw-bolder">SMKN 4 Tanjungpinang</a>.
-        All rights reserved.
+        <a href="#" target="_blank" class="footer-link fw-bolder"></a>.
     </div>
   </div>
 </footer><!-- End Footer -->

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2025 at 09:46 AM
+-- Generation Time: Jun 15, 2025 at 05:30 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -35,13 +35,6 @@ CREATE TABLE `detail_pesanan` (
   `harga_saat_pesan` decimal(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `detail_pesanan`
---
-
-INSERT INTO `detail_pesanan` (`id_detail`, `id_pesanan`, `id_menu`, `jumlah`, `harga_saat_pesan`) VALUES
-(28, 24, 64, 5, 2000.00);
-
 -- --------------------------------------------------------
 
 --
@@ -63,9 +56,9 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`menu_id`, `nama`, `harga`, `kategori`, `gambar`, `stok`, `status_aktif`) VALUES
-(64, 'es kosong', 2000, 'MINUMAN', 'es.jpg', 85, 1),
-(65, 'teh obeng', 8000, 'MINUMAN', 'es.jpg', 100, 1),
-(66, 'teh tarik hangat', 8000, 'MINUMAN', 'es.jpg', 45, 1),
+(64, 'es kosong', 2000, 'MINUMAN', 'es.jpg', 81, 1),
+(65, 'teh obeng', 8000, 'MINUMAN', 'es.jpg', 97, 1),
+(66, 'teh tarik hangat', 8000, 'MINUMAN', 'es.jpg', 44, 1),
 (67, 'teh tarik dingin', 12000, 'MINUMAN', 'es.jpg', 0, 1),
 (68, 'teh hangat', 6000, 'MINUMAN', 'es.jpg', 0, 1),
 (69, 'kopi hangat', 8000, 'MINUMAN', 'es.jpg', 0, 1),
@@ -73,7 +66,20 @@ INSERT INTO `menu` (`menu_id`, `nama`, `harga`, `kategori`, `gambar`, `stok`, `s
 (71, 'lemon tea hangat', 8000, 'MINUMAN', 'es.jpg', 0, 1),
 (72, 'lemon tea dingin', 10000, 'MINUMAN', 'es.jpg', 0, 1),
 (73, 'extrajos susu', 12000, 'MINUMAN', 'es.jpg', 0, 1),
-(74, 'kuku bima susu', 12000, 'MINUMAN', 'es.jpg', 0, 1);
+(74, 'kuku bima susu', 12000, 'MINUMAN', 'es.jpg', 0, 1),
+(75, 'NUGGET PISANG', 15000, 'SNACKS', 'es.jpg', 0, 1),
+(76, 'NUGGET AYAM', 15000, 'SNACKS', 'es.jpg', 0, 1),
+(77, 'KENTANG GORENG', 15000, 'SNACKS', 'es.jpg', 0, 1),
+(78, 'SOSIS', 15000, 'SNACKS', 'es.jpg', 0, 1),
+(79, 'PISANG COKLAT', 15000, 'SNACKS', 'es.jpg', 0, 1),
+(80, 'TEMPE MENDOAN', 15000, 'SNACKS', 'es.jpg', 0, 1),
+(81, 'NASIR', 5000, 'MAKANAN', 'es.jpg', 0, 1),
+(82, 'NASI GORENG', 17000, 'MAKANAN', 'es.jpg', 0, 1),
+(83, 'NASI GORENG KAMPUNG', 20000, 'MAKANAN', 'es.jpg', 0, 1),
+(84, 'MIE GORENG JAWA', 17000, 'MAKANAN', 'es.jpg', 0, 1),
+(85, 'MIE GHODOG JAWA', 17000, 'MAKANAN', 'es.jpg', 0, 1),
+(86, 'RICE BOWL AYAM SAMBAL', 25000, 'MAKANAN', 'es.jpg', 0, 1),
+(87, 'RICE BOWL AYAM BAWANG', 25000, 'MAKANAN', 'es.jpg', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -88,13 +94,6 @@ CREATE TABLE `pesanan` (
   `tanggal_pesanan` timestamp NOT NULL DEFAULT current_timestamp(),
   `status_pesanan` varchar(50) DEFAULT 'Diproses'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `pesanan`
---
-
-INSERT INTO `pesanan` (`id_pesanan`, `user_id`, `nomor_meja`, `tanggal_pesanan`, `status_pesanan`) VALUES
-(24, 57, 'meja 1', '2025-06-11 02:04:31', 'Dibatalkan');
 
 -- --------------------------------------------------------
 
@@ -160,19 +159,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `detail_pesanan`
 --
 ALTER TABLE `detail_pesanan`
-  MODIFY `id_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
 
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id_pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `users`
